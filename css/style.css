@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body, html{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+.cadastro img{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-left: 32%;
+    padding: 5px;
+}
+.cadastro h1{
+    color: #0f004a;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 40px;
+}
+.form{
+    width: 95%;
+    font-size: 15px;
+    text-align: center;
+    padding:20px;
+}
+.form fieldset{
+    padding: 20px;
+}
+.form legend{
+    font-size: 25px;
+    padding: 5px;
+    color: #011c45;
+}
+.form select{
+    width: 100px;
+    padding: 7px;
+}
+.form input{
+    padding: 5px;
+    margin: 2px auto;
+}
+.form input[type=text]{
+    width: 350px;
+    padding: 7px;
+}
+.form input[type=submit]{
+    background-color: #070124;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+.form input[type=submit]:hover{
+    background-color:#027d02;
+}
+.form input[type=reset]{
+    background-color: #070124;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+.form input[type=reset]:hover{
+    background-color:#e00417;
+}
+.form input[type=number]{
+    text-decoration: none;
+}
+.form-text input[type=text]{
+    width: 200px;
+}
+.enviar label{
+    border: 1px solid #0c0447;
+    padding: 7px;
+    border-radius: 5px;
+
+
+}

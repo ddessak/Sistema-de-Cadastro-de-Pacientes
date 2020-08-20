@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body, html{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+.img img{
+    width: 550px;
+    margin-left: 30%;
+    margin-top:-20px;
+}
+.img h1{
+    font-size: 80px;
+    margin-top:-170px;
+    color: #040052;
+    margin-left: 30%;
+}
