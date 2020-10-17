@@ -1,5 +1,5 @@
 <DOCTYOE html>
-
+    <?php session_start(); ?>
 <html>
     <head>
 
@@ -7,7 +7,6 @@
     <meta charset="utf-8" > 
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="css/menu.css" type="text/css" rel="stylesheet" />
-    <link href="js/alert.js" type="text/css" rel="stylesheet" />
 
     </head>
     <body>
@@ -15,30 +14,34 @@
 
         <div class="menu">
 
-            <a href="pacientes.php">Pacientes</a>
-            <a href="cadastro.php">Cadastrar Pacientes &nbsp;| </a>
+            <a href="pacientes.php">Busca</a>
+            <a href="todos.php">Pacientes Ativos &nbsp;| </a>
             <a href="index.php">Home &nbsp;| </a>
 
             <img src="imagem/saude.png" alt="">
                 
         </div>
 
-        <div class="cadastro-1">
-
+        
         <div class="cadastro"> 
 
             <img src="imagem/cadastro.png" alt="">
             <h1>Cadastrar <br> Novos Pacientes</h1>
 
         </div>
+        <div class="confirme" id="confirme">
+            <p>Casdastro Realizado com Sucesso</p>
+            <br>
+            <button onclick="confirme()">OK</button>
+        </div> 
 
         <div class="form" >
-            <form metahod="get" action="processa.php">
+            <form  action="php/processa.php" method="POST">
                  <fieldset> 
-                    <legend> Dados </legend>
+                    <legend> Dados do Paciente </legend>
                         
                         <label>CPF:</label>
-                        <input type="number" name="cpf" placeholder="Digite o CPF" required> 
+                        <input type="number" name="cpf" placeholder="Digite o CPF" minlength="11" maxlength="14" required> 
 
                         <label>Nome do Paciente:</label>
                         <input type="text" name="nome" placeholder="Digite o nome completo" required>
@@ -47,7 +50,7 @@
                         <input type="number" name="rg" placeholder="Digite o RG" required>
 
                         <label>Cartão SUS:</label>
-                        <input type="number" name="sus" placeholder="Digite o número do cartão do sus" required>
+                        <input type="number" name="sus" placeholder="Digite o número do sus" required>
                         <br>
                         <label>Genero:</label>
                         <select id="genero" name="genero" required>
@@ -68,9 +71,6 @@
 
                         <div class="enviar">
 
-                        <label>Envie uma foto</label>
-                        <input name="arquivo" type="file"required>
-
                         </div>
                 </fieldset> 
 
@@ -88,22 +88,16 @@
                         <label>Número:</label>
                         <input type="number" name="numero" placeholder="Digite o número" required>
                         
-                        <label>Quadra:</label>
-                        <input type="text" name="quadra" placeholder="Digite a quadra" required>
-
-                        <label>Lote:</label>
-                        <input type="text" name="lote" placeholder="Digite o lote" required>
-                        <br>
                         <label>Complemento:</label>
                         <input type="text" name="complemento" placeholder="Digite o complemento">
-                        
+                        <br>
                         <label>Cidade:</label>
                         <input type="text" name="cidade" placeholder="Digite o nome da cidade" required>
                         
                         <label>UF:</label>
                         <select id="estado" name="estado" required>
 
-                            <option value=" Selecione ">Selecione </option>
+                            <option value=" Selecione " >Selecione </option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -136,13 +130,13 @@
                     </div>
                     </fieldset>
 
-            <input type="submit" value="Cadastrar"> 
+            <input type="submit" value="Cadastrar" onclick="confirme()"> 
             <input id="reset" type="reset" value="Limpar"> 
 
             </form>
 
         </div>
 
-        </div>
+        <script type="text/javascript"  src="js/js.js"></script>
     </body>
 </html>

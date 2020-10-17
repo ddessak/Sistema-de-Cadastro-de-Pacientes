@@ -3,7 +3,7 @@
 <html>
     <head>
 
-        <title>Cadastrar</title>
+        <title>Busca</title>
         <meta charset="utf-8" > 
         <link href="css/menu.css" type="text/css" rel="stylesheet" />
         <link href="css/pacientes.css" type="text/css" rel="stylesheet" />
@@ -29,7 +29,7 @@
 
         <div class="form">
             
-        <form>
+        <form action="php/pesquisa.php" method="POST">
             <label>Pesquisar: </label>
             <input type="number" name="cpf" placeholder="Digite o CPF" required> 
             <br>
