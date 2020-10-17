@@ -5,8 +5,8 @@
 
     <title>Pacientes</title>
     <meta charset="utf-8" > 
-    <link href="css/todos.css" type="text/css" rel="stylesheet" />
-    <link href="css/menu.css" type="text/css" rel="stylesheet" />
+    <link href="../css/todos.css" type="text/css" rel="stylesheet" />
+    <link href="../css/menu.css" type="text/css" rel="stylesheet" />
 
     </head>
     <body>
@@ -14,10 +14,10 @@
 
         <div class="menu">
 
-            <a href="pacientes.php">Antigos Pacientes</a>
-            <a href="index.php">Home &nbsp;| </a>
+            <a href="#">Antigos Pacientes</a>
+            <a href="../index.php">Home &nbsp;| </a>
 
-            <img src="imagem/saude.png" alt="">
+            <img src="../imagem/saude.png" alt="">
                 
         </div>
         <h1>Todos os pacientes</h1>

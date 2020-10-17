@@ -14,10 +14,10 @@
 
         <div class="menu">
 
-            <a href="pacientes.php">Buscar</a>
-            <a href="cadastro.php">Cadastrar Pacientes &nbsp;| </a>
-            <a href="todos.php">Pacientes &nbsp;| </a>
-            <a href="index.php">Home &nbsp;| </a>
+            <a href="php/pacientes.php">Buscar</a>
+            <a href="php/cadastro.php">Cadastrar Pacientes &nbsp;| </a>
+            <a href="php/todos.php">Pacientes &nbsp;| </a>
+            <a href="php/index.php">Home &nbsp;| </a>
 
             <img src="imagem/saude.png" alt="">
         

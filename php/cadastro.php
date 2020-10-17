@@ -5,8 +5,8 @@
 
     <title>Cadastrar</title>
     <meta charset="utf-8" > 
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link href="css/menu.css" type="text/css" rel="stylesheet" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <link href="../css/menu.css" type="text/css" rel="stylesheet" />
 
     </head>
     <body>
@@ -16,16 +16,16 @@
 
             <a href="pacientes.php">Busca</a>
             <a href="todos.php">Pacientes Ativos &nbsp;| </a>
-            <a href="index.php">Home &nbsp;| </a>
+            <a href="../index.php">Home &nbsp;| </a>
 
-            <img src="imagem/saude.png" alt="">
+            <img src="../imagem/saude.png" alt="">
                 
         </div>
 
         
         <div class="cadastro"> 
 
-            <img src="imagem/cadastro.png" alt="">
+            <img src="../imagem/cadastro.png" alt="">
             <h1>Cadastrar <br> Novos Pacientes</h1>
 
         </div>
@@ -36,7 +36,7 @@
         </div> 
 
         <div class="form" >
-            <form  action="php/processa.php" method="POST">
+            <form  action="processa.php" method="POST">
                  <fieldset> 
                     <legend> Dados do Paciente </legend>
                         
@@ -137,6 +137,6 @@
 
         </div>
 
-        <script type="text/javascript"  src="js/js.js"></script>
+        <script type="text/javascript"  src="../js/js.js"></script>
     </body>
 </html>

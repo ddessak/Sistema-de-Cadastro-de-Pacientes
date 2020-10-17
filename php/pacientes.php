@@ -5,8 +5,8 @@
 
         <title>Busca</title>
         <meta charset="utf-8" > 
-        <link href="css/menu.css" type="text/css" rel="stylesheet" />
-        <link href="css/pacientes.css" type="text/css" rel="stylesheet" />
+        <link href="../css/menu.css" type="text/css" rel="stylesheet" />
+        <link href="../css/pacientes.css" type="text/css" rel="stylesheet" />
 
     </head>
     <body>
@@ -15,15 +15,15 @@
         <div class="menu">
 
             <a href="todos.php">Todos os pacientes </a>
-            <a href="index.php">Home &nbsp;| </a>
+            <a href="../index.php">Home &nbsp;| </a>
 
-            <img src="imagem/saude.png" alt="">
+            <img src="../imagem/saude.png" alt="">
         
         </div>
         
         <div class="img">
 
-            <img src="imagem/saude1.png" alt="">
+            <img src="../imagem/saude1.png" alt="">
            
         </div>
 
