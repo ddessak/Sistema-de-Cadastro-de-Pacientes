@@ -7,6 +7,8 @@
         <meta charset="utf-8" > 
         <link href="css/menu.css" type="text/css" rel="stylesheet" />
         <link href="css/home.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" href="imagem/saude.png">
+
 
     </head>
     <body>
@@ -17,7 +19,7 @@
             <a href="php/pacientes.php">Buscar</a>
             <a href="php/cadastro.php">Cadastrar Pacientes &nbsp;| </a>
             <a href="php/todos.php">Pacientes &nbsp;| </a>
-            <a href="php/index.php">Home &nbsp;| </a>
+            <a href="index.php">Home &nbsp;| </a>
 
             <img src="imagem/saude.png" alt="">
         

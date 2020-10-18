@@ -7,6 +7,8 @@
     <meta charset="utf-8" > 
     <link href="../css/todos.css" type="text/css" rel="stylesheet" />
     <link href="../css/menu.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../imagem/saude.png">
+
 
     </head>
     <body>
@@ -30,7 +32,6 @@
 
             echo "<center> <table>
                 <tr> 
-                    <td> ID </td>  
                     <td> CPF </td>  
                     <td> Nome </td>  
                     <td> RG </td>  
@@ -51,7 +52,6 @@
             while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
                 echo " 
                 <tr> 
-                    <td> {$linha['id']} </td>  
                     <td> {$linha['cpf']} </td>  
                     <td> {$linha['nome']}</td>
                     <td> {$linha['rg']}</td>
@@ -68,7 +68,7 @@
                     <td> {$linha['estado']}</td>
                 </tr> ";
             }
-            echo"</table border='1'></center>"
+            echo"</table border='1'></center>";
         ?>
         <br>
         <center> 

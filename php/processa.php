@@ -41,7 +41,7 @@ try {
 
   ));
 
-  header("location: ../cadastro.php");
+  header("location: cadastro.php");
 
 } catch(PDOException $e) {
   echo 'Error: ' . $e->getMessage();

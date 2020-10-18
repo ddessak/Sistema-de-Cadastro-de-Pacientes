@@ -1,12 +1,13 @@
 <DOCTYOE html>
-
 <html>
     <head>
 
         <title>Busca</title>
         <meta charset="utf-8" > 
+        <link rel="shortcut icon" href="../imagem/saude.png">
         <link href="../css/menu.css" type="text/css" rel="stylesheet" />
         <link href="../css/pacientes.css" type="text/css" rel="stylesheet" />
+        
 
     </head>
     <body>
@@ -23,20 +24,18 @@
         
         <div class="img">
 
-            <img src="../imagem/saude1.png" alt="">
+            <img src="../imagem/busca.png" alt="">
            
         </div>
 
         <div class="form">
             
-        <form action="php/pesquisa.php" method="POST">
-            <label>Pesquisar: </label>
-            <input type="number" name="cpf" placeholder="Digite o CPF" required> 
-            <br>
-            <input type="submit" value="Buscar"> 
-        </form>
+            <form action="pesquisa.php" method="POST">
+
+                <input type="number" name="cpf" placeholder="Digite o CPF" maxlength="14" required> 
+                <input type="submit" name="pesquisa"value="Pesquisar"> 
+            </form>
 
         </div>
-
     </body>
 </html>

@@ -7,6 +7,7 @@
     <meta charset="utf-8" > 
     <link href="../css/style.css" type="text/css" rel="stylesheet" />
     <link href="../css/menu.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../imagem/saude.png">
 
     </head>
     <body>
@@ -26,7 +27,7 @@
         <div class="cadastro"> 
 
             <img src="../imagem/cadastro.png" alt="">
-            <h1>Cadastrar <br> Novos Pacientes</h1>
+            <h1>Ficha de Cadastro</h1>
 
         </div>
         <div class="confirme" id="confirme">
@@ -39,39 +40,36 @@
             <form  action="processa.php" method="POST">
                  <fieldset> 
                     <legend> Dados do Paciente </legend>
-                        
-                        <label>CPF:</label>
-                        <input type="number" name="cpf" placeholder="Digite o CPF" minlength="11" maxlength="14" required> 
+                    
+                    <label>CPF:</label>
+                    <input type="number" name="cpf" placeholder="Digite o CPF" minlength="11" maxlength="14" required> 
 
-                        <label>Nome do Paciente:</label>
-                        <input type="text" name="nome" placeholder="Digite o nome completo" required>
+                    <label>Nome do Paciente:</label>
+                    <input type="text" name="nome" placeholder="Digite o nome completo" required>
 
-                        <label>RG:</label>
-                        <input type="number" name="rg" placeholder="Digite o RG" required>
+                    <label>RG:</label>
+                    <input type="number" name="rg" placeholder="Digite o RG" required>
+                    <br>
+                    <label>Cartão SUS:</label>
+                    <input type="number" name="sus" placeholder="Digite o número do sus" required>
+                    
+                    <label>Genero:</label>
+                    <select id="genero" name="genero" required>
+                        <option disabled selected > Selecione </option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Não declado">Não decladado</option>
+                    </select>
 
-                        <label>Cartão SUS:</label>
-                        <input type="number" name="sus" placeholder="Digite o número do sus" required>
-                        <br>
-                        <label>Genero:</label>
-                        <select id="genero" name="genero" required>
-                            <option value="escolha uma opção"> Selecione </option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Não declado">Não decladado</option>
-                        </select>
-
-                        <label>Data de nascimento:</label>
-                        <input type="date" name="nascimento" required>
-
-                        <label>Nome do Mãe:</label>
-                        <input type="text" name="familia" placeholder="Digite o nome completo" required>
-                        
-                        <label>Telefone:</label>
-                        <input type="number" name="telefone" placeholder="Digite o telefone" required>
-
-                        <div class="enviar">
-
-                        </div>
+                    <label>Data de nascimento:</label>
+                    <input type="date" name="nascimento" required>
+                    <br>
+                    <label>Nome do Mãe:</label>
+                    <input type="text" name="familia" placeholder="Digite o nome completo" required>
+                    
+                    <label>Telefone:</label>
+                    <input type="number" name="telefone" placeholder="Digite o telefone" required>                   
+            
                 </fieldset> 
 
             <div class="clear"></div>
@@ -97,7 +95,7 @@
                         <label>UF:</label>
                         <select id="estado" name="estado" required>
 
-                            <option value=" Selecione " >Selecione </option>
+                            <option disabled selected >Selecione </option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -130,8 +128,10 @@
                     </div>
                     </fieldset>
 
-            <input type="submit" value="Cadastrar" onclick="confirme()"> 
             <input id="reset" type="reset" value="Limpar"> 
+            <br>
+            <input type="submit" value="Cadastrar" onclick="confirme()"> 
+            
 
             </form>
 
